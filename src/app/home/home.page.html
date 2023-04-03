@@ -10,45 +10,17 @@
   </ion-menu>
 
   <div class="ion-page" id="main-content">
-    <ion-row>
-      <ion-header>
-
-        <ion-toolbar class="navbar">
-          <ion-buttons slot="start">
-            <ion-menu-button></ion-menu-button>
-          </ion-buttons>
-
-          <ion-col class="ion-text-center">Sushi Bar</ion-col>
-
-          <ion-row class="ion-text-end">
-            <ion-col>
-              <ion-icon name="person-circle-outline"></ion-icon>
-            </ion-col>
-          </ion-row>
-
-        </ion-toolbar>
-      </ion-header>
-    </ion-row>
+ 
 
 
     <ion-content>
-      <ion-grid>
-        <ion-row class="ion-text-center">
-          <ion-col>
-            Bebidas***
-          </ion-col>
-
-          <ion-col>
-            Barca***
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-
-      <ion-card-content *ngFor="let item of items; trackBy:trackItems">
+    
+      <ion-row>
+        <ion-card-content *ngFor="let item of items; trackBy:trackItems">
           <ion-item lines="none">
             <ion-label>{{item.titulo}}</ion-label>
             <ion-thumbnail slot="start" class="thumbnail">
-              <img src={{item.img}}/>
+              <img src={{item.img}} />
             </ion-thumbnail>
             <ion-label>{{item.preco}}</ion-label>
           </ion-item>
@@ -62,15 +34,13 @@
               </div>
             </ion-accordion>
           </ion-accordion-group>
-      </ion-card-content>
-
-
+        </ion-card-content>
+      </ion-row>
     </ion-content>
 
-    <ion-footer class="ion-text-end">
-      
+    <ion-footer>
+
     </ion-footer>
   </div>
 
 </ion-content>
-

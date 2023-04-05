@@ -26,13 +26,11 @@
 @import "~@ionic/angular/css/flex-utils.css";
 
 .navbar{
-    --background: rgb(157, 11, 157);
+    --background: rgb(255, 111, 0);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: large;
-    color: rgb(221, 215, 215);
+    color: rgb(255, 255, 255);
     text-align: center;
-
-    
 }
 
 .body{
@@ -40,18 +38,15 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: small;
     color: rgba(196, 190, 190, 0.105);
-
-}
-
-.menu{
-    --background: rgb(196, 190, 190, 0.105);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: medium;
-    color: rgb(255, 255, 255);
-
 }
 
 .thumbnail{
     width: 30%;
     height: 30%;  
+}
+
+.color{
+  --background: rgba(255, 111, 0);
+  color: rgb(255, 255, 255);
+
 }
